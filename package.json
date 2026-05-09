@@ -1,0 +1,27 @@
+{
+  "name": "musicmakingdreams",
+  "version": "1.0.0",
+  "description": "A music production portfolio and beat selling platform",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && nodemon index.js",
+    "client:dev": "cd client && npm start",
+    "server:start": "cd server && node index.js",
+    "client:build": "cd client && npm run build",
+    "build": "npm run client:build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "music",
+    "production",
+    "beats",
+    "portfolio",
+    "e-commerce"
+  ],
+  "author": "fiorecarp07",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
